@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>contacts</title>
+    
+    <style>
+            .btn-group button {
+    background-color: #4CAF80; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 50px 50px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float:none; /* Float the buttons side by side */
+                margin-right:50px;
+                margin-left:180px;
+                margin-bottom:50px;
+                margin-top:80px;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: inline;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+    body { 
+    background: url(catalog.jpg)  no-repeat top fixed;
+  background-position: center;
+    background-size: cover;
+        
+   }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF80;
+}
+    </style>
+    
+</head>
+
+<body>
+<ul>
+  <li><a href="Glavnaya.html">Главная</a></li>
+  <li><a class="active" href="#catalog">Каталог</a></li>
+  <li><a href="forma.html">Заказать</a></li>
+  <li><a href="#new">Новинки</a></li>
+</ul>
+<h1></h1>
+
+<div class="btn-group">
+  <button>ПОДАРКИ</button>
+  <button>ЖАНРЫ</button>
+  <button>ДЛЯ ДЕТЕЙ</button>
+  <button>ПОПУЛЯРНОЕ</button>
+  <button>НОВИНКИ</button>
+  <button>АКЦИИ</button>
+</div>
+
+</body>
+</html>
