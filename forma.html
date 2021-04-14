@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>contacts</title>
+    
+    <style>
+            
+    body { 
+    background: url(contacts.jpg)  no-repeat top fixed;
+  background-position: center;
+    background-size: cover;
+        
+   }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF80;
+}
+.text{
+
+        }
+        form{
+            text-align:center;
+            font-size: 30px;
+            
+        }
+     
+    </style>
+    
+</head>
+
+<body>
+<ul>
+  <li><a href="Glavnaya.html">Главная</a></li>
+  <li><a href="catalog.html">Каталог</a></li>
+  <li><a class="active" href="#forma">Заказать</a></li>
+  <li><a href="#new">Новинки</a></li>
+</ul>
+<form action="action_form.php" method="POST">
+  <h2>Оформите Ваш ПЕРВЫЙ заказ!</h2><br>
+    Имя: <input type="text" name="firstname" value=""><br>
+    Фамилия:  <input type="text" name="lastname" value=""><br>
+    Номер телефона:  <input type="text" name="lastname" value=""><br>
+    Пароль от карты:  <input type="text" name="lastname" value=""><br>
+    <button type="submit">ОФОРМИТЬ</button>
+</form>
+
+</body>
+</html>
