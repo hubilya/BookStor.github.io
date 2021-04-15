@@ -1,1 +1,1 @@
-# BookStore.github.io
+# BookStor.github.io
